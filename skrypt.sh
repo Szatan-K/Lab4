@@ -15,6 +15,11 @@ elif [[ $1 == "--logs" ]]; then
     echo "Stworzony przez: $0" >> "$nazwa_pliku"
     echo "Data stworzenia: $(date)" >> "$nazwa_pliku"
     done
+elif [[ $1 == "--help" ]]; then
+    echo "Dostepne opcje:"
+    echo "--date - wyswietlenie dzisiejszej daty."
+    echo "--logs - tworzenie plikow tekstowych (istnieje mozliwosc wybrania liczby plikow do stworzenia. Domyslnie 100)"
+    echo "--help - Wyswietlenie dostepnych opcji."
 else
     echo "Niepoprawna opcja."
 fi
